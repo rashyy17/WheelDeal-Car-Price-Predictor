@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IPython
+.ipynb_checkpoints/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# pyenv
+.python-version
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# env files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Streamlit cache
+.streamlit/
+
+# Optional: ignore models if they're large (uncomment if you host models elsewhere)
+# models/*.pkl

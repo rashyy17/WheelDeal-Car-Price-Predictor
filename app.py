@@ -62,6 +62,13 @@ else:
 overlay = 'rgba(0,0,0,0.45)' if dark_mode else 'rgba(255,255,255,0.75)'
 card_shadow = '0 10px 30px rgba(2,6,23,0.45)' if dark_mode else '0 8px 24px rgba(20,20,30,0.06)'
 card_text_color = text_color
+# Subtle background gradient to give a classy layered look
+if dark_mode:
+    gradient_start = 'rgba(6,18,28,0.60)'
+    gradient_end = 'rgba(28,42,66,0.45)'
+else:
+    gradient_start = 'rgba(255,245,235,0.55)'
+    gradient_end = 'rgba(245,230,255,0.40)'
 
 st.markdown(
     f"""
@@ -75,10 +82,15 @@ st.markdown(
         background: transparent !important;
     }}
     .stApp > div:first-child {{
-        background-image: linear-gradient(180deg, {overlay}, rgba(0,0,0,0.06)), url("{background_url}");
-        background-size: cover;
+        /* layered background: soft diagonal gradient + overlay + image */
+        background-image: linear-gradient(135deg, {gradient_start}, {gradient_end}),
+                          linear-gradient(180deg, {overlay}, rgba(0,0,0,0.06)),
+                          url("{background_url}");
+        background-size: cover, cover, cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
+        background-position: center center;
+        background-blend-mode: overlay, multiply, normal;
         padding-top: 18px;
         padding-bottom: 32px;
     }}
@@ -321,7 +333,7 @@ st.markdown(
     f"""
     <hr style="opacity:0.2"/>
     <p style='text-align:center; color: {text_color}; font-size: 14px;'>
-        # Made with ❤️ by <b>Rashi Kushwaha</b><br>
+         Made with ❤️ by <b>Rashi Kushwaha</b><br>
         <i>Powered by Random Forest · Streamlit · Wheel Deal 🚗</i>
     </p>
     """,
