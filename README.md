@@ -1,4 +1,4 @@
-# 🚗 WheelDeal – Car Price Predictor
+<img width="556" height="102" alt="image" src="https://github.com/user-attachments/assets/db16d5ca-0d76-4997-ba9b-cab457278e7b" /># 🚗 WheelDeal – Car Price Predictor
 
 WheelDeal is a machine learning–based **car price prediction system** designed to give users a realistic estimate of a vehicle’s market value. It combines **price prediction** with **real‑time market comparison**, making it a one‑stop solution for understanding car prices.
 
@@ -117,7 +117,23 @@ WheelDeal-Car-Price-Predictor/
 ## 📌 Why WheelDeal?
 
 WheelDeal bridges the gap between **ML predictions** and **real market prices**, giving users a clearer picture of what a car is actually worth.
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](https://github.com/user-attachments/assets/6dce8d80-1133-4a17-adf7-925df72adbf8)
 
 ---
 
+### 🔮 Web Scraping (OLX comparisions)
+![Price Prediction](https://github.com/user-attachments/assets/c1bfbdf0-2ce5-4a4d-ac8a-bd977fd2bfbe)
+
+---
+
+### 📊 Compare 2 cars mode
+![Market Comparison](https://github.com/user-attachments/assets/18859802-295f-47f9-b944-769253d3786d)
+
+---
+
+### 📈 Using Selenium to fetch data
+![Price Range](https://github.com/user-attachments/assets/41fa7c8c-39ce-46c4-b774-bea4899f3741)
 ⭐ If you find this project interesting, feel free to star the repo!
