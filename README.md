@@ -1,4 +1,4 @@
-<img width="556" height="102" alt="image" src="https://github.com/user-attachments/assets/db16d5ca-0d76-4997-ba9b-cab457278e7b" /># 🚗 WheelDeal – Car Price Predictor
+# 🚗 WheelDeal – Car Price Predictor
 
 WheelDeal is a machine learning–based **car price prediction system** designed to give users a realistic estimate of a vehicle’s market value. It combines **price prediction** with **real‑time market comparison**, making it a one‑stop solution for understanding car prices.
 
