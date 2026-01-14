@@ -18,7 +18,7 @@ WheelDeal offers **two core features**:
 
 * Uses **web scraping (Selenium)** to fetch prices of **similar vehicles listed online**
 * Displays a **predicted price range** based on real market listings
-* Helps validate the ML prediction with real‑world data
+* Helps validate the ML prediction with real-world data
 
 Together, these features help users make informed decisions while buying or selling a car.
 
@@ -46,10 +46,10 @@ Together, these features help users make informed decisions while buying or sell
 ## 🛠️ Tech Stack
 
 * **Python**
-* **Machine Learning** (scikit‑learn)
-* **Flask** (backend logic)
+* **Machine Learning** (scikit-learn)
+* **Streamlit** (interactive UI)
 * **Selenium** (web scraping similar vehicle listings)
-* **HTML / CSS** (basic frontend)
+* **HTML / CSS** (basic styling)
 
 ---
 
@@ -70,30 +70,24 @@ WheelDeal-Car-Price-Predictor/
 
 ## 🚀 How to Run Locally
 
-1. Clone the repository
-
-   ```bash
-   git clone https://github.com/rashyy17/WheelDeal-Car-Price-Predictor.git
-   cd WheelDeal-Car-Price-Predictor
-   ```
-
-2. Install dependencies
+1. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
-
-3. Run the application
+2. Run the app:
 
    ```bash
-   python app.py
+   streamlit run app.py
+   ```
+3. Open in browser:
+
+   ```
    ```
 
-4. Open in browser
+[http://localhost:8501](http://localhost:8501)
 
-   ```
-   http://localhost:5000
-   ```
+```
 
 ---
 
@@ -102,6 +96,12 @@ WheelDeal-Car-Price-Predictor/
 * The project is **not deployed yet**
 * Selenium scraping depends on browser drivers and website structure
 * Accuracy may vary depending on market changes and dataset limitations
+* Make sure to download the Kaggle dataset and place it in the `data/` folder
+
+### Selenium Setup
+Install ChromeDriver matching your Chrome version:
+https://chromedriver.chromium.org/downloads  
+Place it in PATH or in the project root.
 
 ---
 
@@ -117,23 +117,31 @@ WheelDeal-Car-Price-Predictor/
 ## 📌 Why WheelDeal?
 
 WheelDeal bridges the gap between **ML predictions** and **real market prices**, giving users a clearer picture of what a car is actually worth.
+
+---
+
 ## 📸 Screenshots
 
-### 🏠 Home Page
-![Home Page](https://github.com/user-attachments/assets/6dce8d80-1133-4a17-adf7-925df72adbf8)
+### 🏠 Streamlit Home Page
+![Streamlit Home Page](https://github.com/user-attachments/assets/6dce8d80-1133-4a17-adf7-925df72adbf8)
 
 ---
 
-### 🔮 Web Scraping (OLX comparisions)
-![Price Prediction](https://github.com/user-attachments/assets/c1bfbdf0-2ce5-4a4d-ac8a-bd977fd2bfbe)
+### 🔮 Market Price Comparison via Selenium
+![Market Price Comparison](https://github.com/user-attachments/assets/c1bfbdf0-2ce5-4a4d-ac8a-bd977fd2bfbe)
 
 ---
 
-### 📊 Compare 2 cars mode
-![Market Comparison](https://github.com/user-attachments/assets/18859802-295f-47f9-b944-769253d3786d)
+### 📊 Compare Two Cars Mode
+![Compare Two Cars](https://github.com/user-attachments/assets/18859802-295f-47f9-b944-769253d3786d)
 
 ---
 
-### 📈 Using Selenium to fetch data
+### 📈 Price Range Fetched via Selenium
 ![Price Range](https://github.com/user-attachments/assets/41fa7c8c-39ce-46c4-b774-bea4899f3741)
+
+---
+
 ⭐ If you find this project interesting, feel free to star the repo!
+
+```
